@@ -1,16 +1,13 @@
 ## Objectives
 
-1. Objective 1
-2. Objective 2
+1. Write nested routes
+2. Filter data sets based on nesting
 
-## Instructions
+## Overview
 
-Make the tests pass.
+playlister example. Grab solution form previous lab. 
 
-### Part 1: Do Some Stuff
+  * Build `/artists/1/songs` and `/artists/1/songs/3`
+  * Provide a proper error if the artist isn't found. Flash the message artist
+    not found and redirect to `/artists`. If it's song not found, redirect to `/artists/:id/songs`
 
-## Resources
-
-* [Stack Exchange](http://www.stackexchange.com) - [Some Question on Stack Exchange](http://www.stackexchange.com/questions/123)
-
-<a href='https://learn.co/lessons/routing-nested-resources-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
