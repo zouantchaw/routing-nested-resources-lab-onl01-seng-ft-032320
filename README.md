@@ -25,8 +25,8 @@ starter song library!
 1. Create nested resource routes to show all songs for an artist (`/artists/1/songs`) and individual songs for that artist (`/artists/1/songs/1`). Restrict the nested songs routes to `index` and `show` actions only.
 2. Update the artists `index` view to use the new nested resource route
    URL helper in a link to the index of all songs by that artist.
-3. Update the artist `show` view to use the new nested resource route
-   helper in a link to view each song for the artist.
+3. Update the artist `show` view to list each song for that artist and use the new nested resource route
+   helper in a link to view each song.
 4. Update the `songs_controller` to allow `index` and `show` to handle
    for an artist.
 a valid song for the artist.
