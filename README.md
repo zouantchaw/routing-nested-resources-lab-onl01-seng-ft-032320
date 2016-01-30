@@ -33,12 +33,10 @@ a valid song for the artist.
 5. In the songs `index` action, if the `Artist` can't be found, redirect to
    the artists index and set a `flash[:alert]` of "Artist not
 found".
-6. In the artists index view, display the flash alert if it exists.
-7. In the songs `show` action, if the song can't be found for a given
+6. In the songs `show` action, if the song can't be found for a given
    artist, redirect to the artist's songs index and set a
 `flash[:alert]` of "Song not found".
-8. In the songs index view, display the flash alert if it exists.
-9. Make sure all tests pass then party down!
+7. Make sure all tests pass then party down!
 
 ![Party Down](http://i.giphy.com/l41lNRz0uXPQLm0RG.gif)
 
@@ -46,6 +44,9 @@ found".
 
 1. For a refresher on the use of `flash`, see the [ActionController RailsGuide.](http://guides.rubyonrails.org/action_controller_overview.html#the-flash)
 2. Remember when filtering nested resources to query for the children
-   through the parent, e.g. `@artist.songs.find(...)`
+   through the parent, e.g. `@artist.songs.find_by(id: ...)`
+3. There's more than one way to ride the Rails. You could handle not
+   being able to find a record by using `rescue
+ActiveRecord::RecordNotFound`, or you could try using `find_by(id: id)` instead of `find()` and checking to see if the result is `nil`.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/routing-nested-resources-lab' title='Objectives'>Objectives</a> on Learn.co and start learning to code for free.</p>
