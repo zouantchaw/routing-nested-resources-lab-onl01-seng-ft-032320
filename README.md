@@ -12,7 +12,7 @@ In this lab, we're going to extend our song library using nested
 resources to build new routes for our artists and songs, and then use
 the URL helpers in our views to expose these new routes.
 
-We'll also be handling errors when nested resoureces aren't found so
+We'll also be handling errors when nested resources aren't found so
 that we can provide a more professional experience to our users.
 
 ## Instructions
