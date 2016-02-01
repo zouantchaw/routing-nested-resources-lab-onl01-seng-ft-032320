@@ -28,8 +28,7 @@ starter song library!
 3. Update the artist `show` view to list each song for that artist and use the new nested resource route
    helper in a link to view each song.
 4. Update the `songs_controller` to allow `index` and `show` to handle
-   for an artist.
-a valid song for the artist.
+   a valid song for the artist.
 5. In the songs `index` action, if the `Artist` can't be found, redirect to
    the artists index and set a `flash[:alert]` of "Artist not
 found".
